@@ -1,0 +1,132 @@
+body {
+    background-color: #fffcf5;
+    padding: 0;
+    margin: 0;
+}
+header {
+    position: fixed;
+    background-color: #fffcf5;
+    border-bottom: solid #595353 2px;
+    height: 60px;
+}
+
+.icons{
+    display: inline-block;
+    width: 90%;
+}
+
+.icons i{
+    font-size: 33px;
+    color: #424530;
+    margin-left: 10%;
+
+}
+
+
+#cart{
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 150px;
+    margin-left: 10%;
+
+}
+#cart #cartProducts{
+    width:100%;
+}
+
+
+#cart #cartProducts  div img{
+    width:10%;
+    height: 100px;
+    margin-left: 2%;
+    border-radius: 4px;
+    margin-right: 5%;
+}
+#cart #cartProducts  div span{
+    margin-left: 3%;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+#cartProducts div{
+    width: 70%;
+    padding-left: 5%;
+    margin-bottom: 50px;
+    text-align: start;
+    margin-left: 10%;
+
+}
+
+#cartProducts>div{
+    border: solid #595353 4px;
+}
+
+
+.qty{
+    border-radius: 20px;
+    margin: 3% 0;
+    height: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:#595353 ;
+    color: whitesmoke;
+
+}
+
+#titleOfCart{
+    margin-bottom: 5%;
+    margin-left:25%;
+}
+#titleOfCart span{
+    margin-left: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 3%;
+}
+#cartProducts div>div{
+    position: relative;
+    top:-35px;
+    left: -15%;
+}
+
+footer input{
+    position: relative;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10%;
+    margin-top: 4%;
+    height: 50px;
+    padding:0.5% 2%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    background-color: #424530;
+    color: #fffcf5;
+    border: #424530;
+    font-family: Cambria;
+    box-shadow: 3px 3px 3px #cd7307;
+}
+
+footer input:hover{
+    background-color: rgba(66, 69, 48, 0.58);
+    color: #424530;
+}
+
+footer>p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3e220b;
+    margin-left: 40%;
+    display: inline-block;
+}
+
+#totPrice2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #3e220b;
+    margin-left: 2%;
+}

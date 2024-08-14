@@ -1,0 +1,24 @@
+#fav{
+    width: 70%;
+    height: 600px;
+    border: #424530 solid 4px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    left: 15%;
+    padding: 0px;
+}
+.Favourite{
+    background-color: #cd7307;
+    color: #fffcf5;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    top: 0;
+    margin: 10px;
+    font-size: xx-large;
+    font-family: Cambria;
+    padding: 1px 505px 1px 10px;
+}
+i:hover{
+    color: #cd7307;}

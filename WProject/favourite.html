@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furnico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="imgs/icon.png">
+<!--    <link rel="stylesheet" href="styleCart.css">-->
+<!--    <link rel="stylesheet" href="favourite.css">-->
+    <script src="jsFav.js"></script>
+    <style>
+        body {
+            background-color: #fffcf5;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            position: fixed;
+            background-color: #fffcf5;
+            border-bottom: solid #595353 2px;
+            height: 60px;
+        }
+
+        .icons{
+            display: inline-block;
+            width: 90%;
+        }
+
+        .icons i{
+            font-size: 33px;
+            color: #424530;
+            margin-left: 5%;
+
+        }
+
+
+        #fav{
+            border-radius: 10px;
+            width: 80%;
+            padding-top: 150px;
+            margin-left: 10%;
+
+        }
+        #fav #favProducts{
+            width:100%;
+        }
+
+
+        #fav #favProducts  div img{
+            width:10%;
+            height: 100px;
+            margin-left: 2%;
+            border-radius: 4px;
+            margin-right: 5%;
+        }
+        #fav #favProducts  div span{
+            margin-left: 3%;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+        #favProducts div{
+            width: 70%;
+            padding-left: 5%;
+            margin-bottom: 50px;
+            text-align: start;
+            margin-left: 10%;
+
+        }
+
+        #favProducts>div{
+            border: solid #595353 4px;
+        }
+
+        #favProducts div>div{
+            position: relative;
+            top:-35px;
+            left: -15%;
+        }
+
+        .Favourite{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <table border="0" class="table1" cellspacing="0" cellpadding="0">
+        <tr class="row1">
+            <td class="col1">
+                <a href="Home.html"><img src="imgs/logo1.jpg" alt="trial2" width="250" height="50"></a>
+            </td>
+            <td class="col2" style="width: 79%;"></td>
+            <td class="col3" style="width: 21%;">
+                <div class="icons">
+                    <label>
+                        <i class="fa fa-cart-plus" onclick="window.open('shoppingCart.html')"></i>
+                        <a href="Login.html" style="padding-left: 10px;"><i class="fa fa-user" ></i></a>
+                        <i class="fa fa-heart"></i>
+                    </label>
+                </div>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<div id="fav">
+    <div class="Favourite" style="border-bottom:#3e220b solid 2px; margin-bottom: 50px;"><p>My Favourites</p></div>
+    <div id="favProducts"></div>
+</div>
+</body>
+</html>

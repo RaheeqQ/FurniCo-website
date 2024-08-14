@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniCo</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="website icon" type="png" href="imgs/icon.png">
+</head>
+<body>
+<header>
+    <table width="100%">
+        <tr>
+            <td><a href="Home.html"><img src="imgs/logo1.jpg" alt="trial2" width="250" height="50"></a></td>
+            <td>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html"> Home </a></li>
+                        <li><a href="#aboutUs">About us </a></li>
+                        <li><a href="page1.html"> Products </a></li>
+                        <li><a href="contactUs.php"> Contact us </a></li>
+                    </ul>
+                </nav>
+            </td>
+            <td align="center"><button type="submit" class="btnPopup">Login</button></td>
+        </tr>
+    </table>
+</header>
+<section>
+    <div class="wrapper">
+        <span class="iconClose">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="formBox login">
+            <h2>Login</h2>
+            <form action="logInC.php" method="post">
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" id="uname1" required name="txtUserName">
+                    <label for="uname1"> User Name</label>
+                </div>
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="password" required name="txtUserPass">
+                    <label for="password"> Password</label>
+                </div>
+                <div class="remember-forget" id="forget">
+                    <label for="forget"><input type="checkbox"> Remember me</label><a href="#" id="forgotPasswordLink">Forget password?</a>
+
+                </div>
+                <input type="submit" class="btn" value="Log in">
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link"> Register </a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formBox register">
+            <h2>Registration</h2>
+            <form action="signInC.php" method="post">
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" id="userName" required name="txtUserName">
+                    <label for="userName"> User Name</label>
+                </div>
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" required name="userEmail">
+                    <label for="email"> Email</label>
+                </div>
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required name="txtUserPass">
+                    <label for="password"> Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label for="forget"><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <input type="submit" class="btn" value="Register">
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- The Forgot Password Popup -->
+<div id="forgotPasswordPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h1 style="padding-bottom: 40px;">Forgot Password</h1>
+        <form id="forgotPasswordForm" action="forgetPassword.php" method="POST">
+            <label style="font-size: large; padding-left: 10px;" for="email">Enter your email address:</label>
+            <input style="border-radius: 20px;" type="email" name="email" id="forgetEmail" required>
+
+            <label style="font-size: large; padding-left: 10px;">Enter new password:</label>
+            <input style="border-radius: 20px;" type="password" name="password" id="forgetPassword" required>
+
+            <label style="font-size: large; padding-left: 10px;">Confirm password:</label>
+            <input style="border-radius: 20px;" type="password" name="confirmPassword" id="confirmPassword" required>
+
+            <button type="submit">Save new password</button>
+        </form>
+    </div>
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("forgotPasswordPopup");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("forgotPasswordLink");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<div class="group">
+    <table width="100%" valign="top">
+        <tr>
+            <td valign="top">
+                <h2 class="h2"><u>Customer Service</u></h2>
+                <table width="90%">
+                    <tr>
+                        <td valign="top" width="40%">
+                            <p>Call us toll-free <br>
+                                <img class="icons" src="imgs/whatsapp.png" alt="cc">
+                                <span class="number"> 0599595555</span>
+                            <hr>
+                            </p>
+                            <p> Call us worldwide <br>
+                                <img class="icons" src="imgs/whatsapp.png" alt="cc">
+                                <span class="number"> 0599502202</span>
+                            <hr>
+                            </p>
+                            <p> Call us worldwide <br>
+                                <img class="icons" src="imgs/send.png" alt="cc">
+                                <span class="number"> furniCo@gmail.com</span>
+                            </p>
+                        </td>
+                        <td class="line">
+                            <p>&nbsp;&nbsp;Customer Service Hours:<br>
+                            <p> &nbsp;&nbsp;Monday-Friday (8am-8pm CT) <br> &nbsp;&nbsp;Saturday (9am-5:30pm CT)</p>
+                            <hr>
+                            &nbsp;&nbsp;<a href="https://www.instagram.com/"><img src="../imgs/instagram.png"></a>
+                            &nbsp;&nbsp;<a href="https://x.com/?lang=ar"><img src="../imgs/twitter.png"></a>
+                            &nbsp;&nbsp;<a href="https://www.facebook.com/"><img src="../imgs/facebook.png"></a>
+                            &nbsp;&nbsp;<a href="https://www.linkedin.com/"><img src="../imgs/linkedin.png"></a>
+                            &nbsp;&nbsp;<a href="https://web.telegram.org/k/"><img src="../imgs/telegram.png"></a>
+                            &nbsp;&nbsp;<a href="https://www.youtube.com/"><img src="../imgs/youtube.png"></a>
+                            &nbsp;&nbsp;<a href="https://www.pinterest.com/"><img src="../imgs/social.png"></a>
+                            <p>&nbsp;&nbsp;<a href="#fourS">Help Section</a><br>
+                                &nbsp;&nbsp;<a href="#aboutUs">Refer FurniCo</a><br>
+                                &nbsp;&nbsp;Communication Preferences<br></p>
+                            </p>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td valign="top">
+                <h2 class="h2"><u>Our Company</u></h2>
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="40%">
+                            <p><a href="#aboutUs">About FurniCo </a><br>
+                                FurniCo Commitment<br>
+                                Our Services<br>
+                                Sustainability<br>
+                                Careers at FurniCo<br>
+                                Current Openings - Apply Here<br>
+                                FurniCo in the Community<br>
+                                Location Directory<br>
+                                FurniCo Clean Certified<br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td valign="top">
+                <h2 class="h2"><u>Our Services</u></h2>
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="40%">
+                            <p>Rent Home Furniture<br>
+                                Rent Furniture for Students<br>
+                                Rent Furniture for Military<br>
+                                Rent Office Furniture<br>
+                                Rent Event Furniture<br>
+                                Buy Furniture<br>
+                                Disaster Relief<br>
+                                Relocation Assistance<br>
+                                Search for Apartments<br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td valign="top">
+                <h2 class="h2"><u>Our Sites</u></h2>
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="40%">
+                            <p>FurniCo Furniture Rental<br>
+                                FurniCo Furniture Outlet<br>
+                                FurniCo Events<br>
+                                FurniCo Party Rental (WA)<br>
+                                FurniCo Destination Services<br>
+                                FurniCo Global Network<br>
+                                Roomservice by FurniCo<br>
+                                ApartmentSearch by FurniCo<br>
+                                4SITE by FurniCo<br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+</div>
+
+<script src="jsLogin.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

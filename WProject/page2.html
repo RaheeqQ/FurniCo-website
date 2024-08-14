@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furnico</title>
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="imgs/icon.png">
+
+
+    <script src="page2.js"></script>
+</head>
+
+
+<body>
+<header>
+    <table border="0" class="table1" cellspacing="0" cellpadding="0">
+        <tr class="row1">
+            <td class="col1">
+                <a href="Home.html"><img src="imgs/logo1.jpg" alt="trial2" width="250" height="50"></a>
+            </td>
+            <td class="col2" style="width: 79%;"></td>
+            <td class="col3" style="width: 21%;">
+                <div class="icons">
+                    <label class="icon">
+                        <a href="shoppingCart.html" style="padding: 10px;"><i class="fa fa-cart-plus"></i></a>
+                        <a href="#" style="padding: 10px;"> <i class="fa fa-heart"></i></a>
+                        <a href="Login.html" style="padding: 10px;"> <i class="fa fa-user"></i></a>
+                    </label>
+                </div>
+            </td>
+        </tr>
+    </table>
+</header>
+<form action="buyNow.php" method="post">
+    <div class="container2">
+        <div class="imgs2">
+            <img src="imgs/12.jpg" alt="" id="img1">
+            <img src="imgs/1200x11200.jpg" alt="" id="img2" onclick="changeImage(this)">
+            <img src="imgs/chair2.jpg" alt="" id="img3" onclick="changeImage(this)">
+            <img src="imgs/55.jpg" alt="" id="img4" onclick="changeImage(this)">
+        </div>
+        <div class="info">
+            <h1 style="color: #424530;" id="productName">My Product</h1>
+            <div class="rate">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <h1 style="color: #8a3f2c;" id="productPrice">250$</h1>
+            <p style="color: #424530; font-size: 20px;" id="productDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum eum ex molestiae
+                nostrum odio pariatur quos saepe sint vel? Beatae debitis iure libero odio perspiciatis provident, sapiente ut voluptatibus.</p>
+
+            <div class="myColors">
+                <h2 style="color: #8a430b;">Color</h2>
+                <span id ="s1" onclick="removeAllBorder(); border(this)"></span>
+                <span id ="s2" onclick="removeAllBorder(); border(this)"></span>
+                <span id ="s3" onclick="removeAllBorder(); border(this)"></span>
+                <span id ="s4" onclick="removeAllBorder(); border(this)"></span>
+                <span id ="s5" onclick="removeAllBorder(); border(this)"></span>
+            </div>
+
+            <div class="qty">
+                <h2 style="color: #8a430b;">Qty</h2>
+                <span id="btn+" onclick="changeQty(this.id)">+</span>
+                <span id="number">1</span>
+                <span id="btn-" onclick="changeQty(this.id)">-</span>
+            </div>
+
+            <a href="#"> <i class="fa fa-heart"></i></a>
+            <input type="button" value="Add to Cart" id="btn1">
+            <!--        <a href="checkOut.html"><input type="button" value="Buy it Now" id="btn2"></a>-->
+            <input type="submit" value="Buy it Now" id="btn2">
+        </div>
+    </div>
+</form>
+<ul>
+    <li></li>
+    <li><a id="anchorShop" href="javascript:void(0)" onclick="shoppingInfo(this.id)" style="border-bottom:solid rgba(66, 34, 16, 0.7) 5px;">Shopping Info</a></li>
+    <li><a id="anchorPolicy" href="javascript:void(0)" onclick="shoppingInfo(this.id)">Return Policy</a></li>
+</ul>
+
+<div id="shoppingInfo">
+
+    <h2>Delivery Area Surcharge</h2>
+    <p>may apply when shipping to certain remote areas. Available shipping options and their
+        costs will appear at checkout when you enter a shipping address.
+        Orders has to be processed before it is shipped. The time you wait before receiving the package is made
+        up of Processing Time and Shipping Time.</p>
+    <h2> Processing Time: 7 - 10 Business days.</h2>
+    <p>Please Note:
+        A. Processing Time is calculated from the time you paid and the order is verified (verification Email will be sent
+        after payment).
+        B. You may change your mind after placing the order, including but not limited to: switch to another color,
+        size, style or a different product, changes in address. If that happens, Processing Time is calculated from
+        the time when the order detail(s) is eventually confirmed.
+        A confirmation Email will be sent informing the updated Estimated Delivery Time.
+        C. For holidays, processing time may take longer than it usually is. We will notify you in advanc.
+    </p>
+</div>
+
+
+<div id="returnPolicy">
+    <p>
+        Litfad.com sticks to the tenet of "quality first, customer foremost". We have a QA team to
+        check your order products before they are packed and sent, but sometimes a return or an exchange is necessary.
+    </p>
+    <h2>Cancel Policy</h2>
+    <p>
+        All of our products can be canceled until they are shipped. If your order is unpaid,
+        you can easily cancel your order by yourself. If your order has been paid, you can contact
+        our customer service to cancel your order. We cannot guarantee any request to cancel or modify
+        an order once production has already begun. There are no order cancellations accepted once
+        production has begun on any custom or specialty products (items that are not a stock size).
+    </p>
+    <h2>Return Policy</h2>
+    <p>
+        We encourage you to go on a thorough check-up when you receive the package and make sure whether
+        the items are the ones you have specified. If you are going to exchange/return the product,
+        please make sure that they are in the original condition, unused, undamaged and in original package.
+    </p>
+</div>
+
+
+<h1 id="moreProducts">You May Also Like</h1>
+
+<div class="container">
+    <div class="box" id="product14" data-price="299.9">
+        <img src="imgs/1.jpg" alt="bb" onmouseover="this.src='imgs/2.jpg';" onmouseout="this.src='imgs/1.jpg'">
+        <h2>DOUBLE SOFA BED</h2>
+        <span>299.9$</span>
+        <div class="options">
+            <a href="#" class="a3"><i class="fa fa-heart-o"></i></a>
+            <a href="page2.html?productId=14" class="a2"><i class='fa fa-angle-double-right'></i></a>
+        </div>
+    </div>
+
+    <div class="box"  id="product1" data-price="1500">
+        <img src="imgs/bath1.jpg" onmouseover="this.src='imgs/bath2.jpg';" onmouseout="this.src='imgs/bath1.jpg'">
+        <h2>GRAY WALL CABINET</h2>
+        <span>1500$</span>
+        <div class="options">
+            <a href="#" class="a3"><i class="fa fa-heart-o"></i></a>
+            <a href="page2.html?productId=1" class="a2"><i class='fa fa-angle-double-right'></i></a>
+        </div>
+    </div>
+
+    <div class="box" id="product7" data-price="4000">
+
+        <img src="imgs/bed.jpg" onmouseover="this.src = 'imgs/openBed.jpg';" onmouseout="this.src = 'imgs/bed.jpg';">
+        <h2>CREAM OTTOMAN BED</h2>
+        <span>4000$</span>
+        <div class="options">
+            <a href="#" class="a3"><i class="fa fa-heart-o"></i></a>
+            <a href="page2.html?productId=7" class="a2"><i class='fa fa-angle-double-right'></i></a>
+        </div>
+    </div>
+
+    <div class="box" id="product13" data-price="400">
+        <img src="imgs/cupboard1.jpg" alt="bb" onmouseover="this.src='imgs/cupboard2.jpg';" onmouseout="this.src='imgs/cupboard1.jpg'">
+        <h2>ACADIA PINE CUPBOARD</h2>
+        <span>400$</span>
+        <div class="options">
+            <a href="#" class="a3"><i class="fa fa-heart-o"></i></a>
+            <a href="page2.html?productId=13" class="a2"><i class='fa fa-angle-double-right'></i></a>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="group">
+        <table width="100%" valign="top">
+            <tr>
+                <td valign="top">
+                    <h2 class="h2"><u>Customer Service</u></h2>
+                    <table width="90%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>Call us toll-free <br>
+                                    <img class="icons2" src="imgs/whatsapp.png" alt="cc">
+                                    <span class="number"> 0599595555</span>
+                                <hr>
+                                </p>
+                                <p> Call us worldwide <br>
+                                    <img class="icons2" src="imgs/whatsapp.png" alt="cc">
+                                    <span class="number"> 0599502202</span>
+                                <hr>
+                                </p>
+                                <p> Call us worldwide <br>
+                                    <img class="icons2" src="imgs/send.png" alt="cc">
+                                    <span class="number"> furniCo@gmail.com</span>
+                                </p>
+                            </td>
+                            <td class="line">
+                                <p>Customer Service Hours:<br>
+                                <p> Monday-Friday (8am-8pm CT) <br> Saturday (9am-5:30pm CT)</p>
+                                <hr>
+                                &nbsp;&nbsp;<a href="https://www.instagram.com/"><img src="imgs/instagram.png"></a>
+                                &nbsp;&nbsp;<a href="https://x.com/?lang=ar"><img src="imgs/twitter.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.facebook.com/"><img src="imgs/facebook.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.linkedin.com/"><img src="imgs/linkedin.png"></a>
+                                &nbsp;&nbsp;<a href="https://web.telegram.org/k/"><img src="imgs/telegram.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.youtube.com/"><img src="imgs/youtube.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.pinterest.com/"><img src="imgs/social.png"></a>
+                                <p>&nbsp;&nbsp;<a href="#fourS">Help Section</a><br>
+                                    &nbsp;&nbsp;<a href="#aboutUs">Refer FurniCo</a><br>
+                                    &nbsp;&nbsp;Communication Preferences<br></p>
+                                </p>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top">
+                    <h2 class="h2"><u>Our Company</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p><a href="#aboutUs">About FurniCo </a><br>
+                                    FurniCo Commitment<br>
+                                    Our Services<br>
+                                    Sustainability<br>
+                                    Careers at FurniCo<br>
+                                    Current Openings - Apply Here<br>
+                                    FurniCo in the Community<br>
+                                    Location Directory<br>
+                                    FurniCo Clean Certified<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td valign="top">
+                    <h2 class="h2"><u>Our Services</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>Rent Home Furniture<br>
+                                    Rent Furniture for Students<br>
+                                    Rent Furniture for Military<br>
+                                    Rent Office Furniture<br>
+                                    Rent Event Furniture<br>
+                                    Buy Furniture<br>
+                                    Disaster Relief<br>
+                                    Relocation Assistance<br>
+                                    Search for Apartments<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td valign="top">
+                    <h2 class="h2"><u>Our Sites</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>FurniCo Furniture Rental<br>
+                                    FurniCo Furniture Outlet<br>
+                                    FurniCo Events<br>
+                                    FurniCo Party Rental (WA)<br>
+                                    FurniCo Destination Services<br>
+                                    FurniCo Global Network<br>
+                                    Roomservice by FurniCo<br>
+                                    ApartmentSearch by FurniCo<br>
+                                    4SITE by FurniCo<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</footer>
+
+<!--    ***********************************-->
+
+</body>
+
+</html>

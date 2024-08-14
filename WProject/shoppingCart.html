@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furnico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="imgs/icon.png">
+    <link rel="stylesheet" href="styleCart.css">
+    <script src="jsCart.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    <table border="0" class="table1" cellspacing="0" cellpadding="0">
+        <tr class="row1">
+            <td class="col1">
+                <a href="Home.html"><img src="imgs/logo1.jpg" alt="trial2" width="220" height="50"></a>
+            </td>
+            <td class="col2" style="width: 79%;"></td>
+            <td class="col3" style="width: 21%;">
+                <div class="icons">
+                        <label>
+                            <a href="Login.html"><i class="fa fa-user" ></i></a>
+                            <i class="fa fa-heart"></i>
+                        </label>
+                </div>
+            </td>
+        </tr>
+    </table>
+</header>
+
+    <div id="cart">
+        <div id="titleOfCart">
+            <span class="price"><u>Price</u></span>
+            <span><u>Qty</u></span>
+            <span><u>Total Price</u></span>
+        </div>
+        <div id="cartProducts">
+
+        </div>
+    </div>
+
+<footer>
+    <p>Total Price :</p>
+    <p id="totPrice2" onclick="findTotPrice()">hi</p>
+    <form action="buyNow.php" method="post">
+    <input type="submit" value="Check Out" onclick="fillOrder()">
+    </form>
+</footer>
+</body>
+</html>

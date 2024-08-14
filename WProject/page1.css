@@ -1,0 +1,349 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Cambria";
+
+}
+.title{
+    font-size: 50px;
+    color: #a1a1cd;
+    /*font-family: "Times New Roman";*/
+    padding-left: 5%;
+
+}
+/*.icon{*/
+/*    display: flex;*/
+/*    justify-content: right;*/
+/*}*/
+body{
+    background-color: #fffcf5;
+}
+
+.table1 {
+    width: 100vw;
+    height: 20vh;
+    /*position: fixed;*/
+    background-color: #fffcf5;
+
+}
+.table1 .row1{
+    width: 100%;
+    height:70px;
+    /*background-color: #081840;*/
+    /*background-color: #A58E745E;*/
+    /*background-color: rgba(196, 174, 153, 0.62);*/
+    background-color: #fffcf5;
+}
+.table1{
+    /*background-color: #081840;*/
+    background-color: #fffcf5;
+    height: 8%;
+}
+.table1 .col1{
+    width:20%;
+}
+.table1 .col2{
+    width:50%;
+}
+.table1 .col3{
+    width:30%;
+}
+
+
+.col2box {
+    padding-left: 10%;
+    width: 80%;
+}
+
+::placeholder {
+    color: #fdfcfc;
+}
+.col2box form{
+    /*background-color: #cbcbe1;*/
+    background-color: rgba(66, 69, 48, 0.76);
+    border-radius: 20px;
+    /*box-shadow: 0 5px 10px rgb(162, 169, 175);*/
+    box-shadow: 0 5px 10px #424530;
+
+}
+
+.col2box form .s1{
+    font-size: 15px;
+    padding-left: 2%;
+    /*background-color: #cbcbe1;*/
+    background-color: rgba(66, 69, 48, 0);
+    border: none;
+    outline: none;
+    width: 70%;
+
+}
+.col2box form i{
+    padding: 2%;
+}
+
+.icons{
+    display: inline-block;
+    width: 100%;
+    padding-left: 15%;
+
+
+}
+
+.icons i{
+    font-size: 30px;
+    padding-left: 10%;
+    /*color:  #cbcbe1;*/
+    color: #424530;
+
+}
+
+
+.row3 form{
+    padding-top: 3%;
+    padding-left: 75%;
+    font-size: 23px;
+    /*color: #383853;*/
+    padding-bottom: 3%;
+    color: #424530;
+}
+.row3 form select{
+    border-radius: 15px;
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    /*color: #081840;*/
+    /*background-color: #d3d3e8;*/
+    color:white;
+    background-color: rgba(66, 69, 48, 0.76);
+    text-align: center;
+}
+
+
+.tab {
+    overflow: hidden;
+    /*background-color:  #f4f4fa;*/
+    /*border: 2px solid #0f0f3a;*/
+    background-color:  #fffcf5;
+    border: 2px solid #424530;
+
+}
+
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.25% 5%;
+    /*color: #2f2f80;*/
+    color: #424530;
+    font-size: 20px;
+    white-space: nowrap;
+    background-color:  #fffcf5;
+
+}
+
+
+.tab button:hover {
+    /*background-color: #2e2e61;*/
+    /*color: #f1f1f1;*/
+    background-color: rgba(66, 69, 48, 0.76);
+    color: #fffcf5;
+}
+
+
+.tab button.active {
+    /*background-color: #090943;*/
+    color: #fffcf5;
+    background-color: #424530;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.container{
+    width:1180px;
+    padding:15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    gap: 35px;
+}
+.box{
+    /*background-color: #e8e8ef;*/
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #424530;
+    gap: 17px;
+    margin-top: 0;
+    background-color: #e6e1dc;
+    color: #424530;
+}
+
+.box:hover{
+    margin-top: -10px;
+}
+.box img{
+    width: 100%;
+}
+
+.box img:hover{
+    cursor: pointer;
+    opacity: 80%;
+
+
+}
+
+@media (max-width: 1200px) {
+    .container{
+        width: 1000px;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+}
+
+.box h2{
+    font-size: 20px;
+}
+.box p{
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 1.35;
+    /*color: #121249;*/
+    color: #424530;
+}
+
+.box span{
+    font-weight: 800;
+    font-size: 18px;
+}
+.box .rate{
+    color: #ffaa49;
+    font-size: 13px;
+}
+
+
+.box .options{
+    margin-bottom: 10%;
+    padding:5% 0 ;
+    width: 70%;
+
+}
+
+.box .options a{
+    font-size: 18px;
+    text-decoration: none;
+    border: #424530;
+    color: #f1f1f1;
+    background-color: #424530;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #cd7307;
+
+}
+
+.box .options a:hover{
+    /*background-color: #737387;*/
+    background-color: rgba(66, 69, 48, 0.76);
+    color: #fffcf5;
+}
+
+.box .options .a1 {
+    /*border: 1px solid white;*/
+    padding: 3% 6%;
+}
+.box .options .a3{
+    margin-right: 4%;
+    /*border: 1px solid white;*/
+    padding: 3% 3%;
+}
+.box .options .a2 {
+    margin-right: 4%;
+    /*border: 1px solid white;*/
+    padding: 3% 3%;
+}
+
+.icons2{
+    border-radius: 0;
+}
+.group{
+    border: 3px solid #424530;
+    background-color: rgba(165, 142, 116, 0.27);
+    border-radius: 10px;
+    margin: 1%;
+}
+.number{
+    display: inline-block;
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: Cambria;
+}
+.line{
+    border-left: #424530 solid 3px;
+    vertical-align: top;
+    width: 90%;
+}
+
+.group table a{
+    font-family: Cambria;
+    text-decoration: none;
+    color: #424530;
+}
+.group table td h2{
+    font-size: xx-large;
+    margin-bottom: 5%;
+}
+footer{
+    margin:10% 2% 2% 2%;
+}
+
+.h2{
+    font-family: Cambria;
+    color: #424530;
+    font-size: xx-large;
+    float: left;
+}
+
+.formControl{
+    border-radius: 10px;
+    background: rgba(66, 69, 48, 0.82);
+    padding: 0.4rem;
+    padding-left: 2.7rem;
+    margin: 0.2rem 0;
+    font-family: Cambria;
+    font-size: 15px;
+    color: #fffcf5;
+}
+.formControl2{
+    width: 35%;
+    border-radius: 10px;
+    background: rgba(66, 69, 48, 0.78);
+    text-align: left;
+    padding: 0.4rem;
+    padding-left: 1.5rem;
+    margin: 0.2rem 0;
+    font-family: Cambria;
+    font-size: 15px;
+    color: #fffcf5;
+}

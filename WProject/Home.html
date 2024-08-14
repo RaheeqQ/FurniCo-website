@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>FurniCo</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="website icon" type="png" href="imgs/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+<!--*-->
+<!--<div class="allContent">-->
+
+<!--    <div class="mainContent">-->
+<header>
+    <table width="100%">
+        <tr>
+            <td><a href="Home.html"><img src="imgs/logo1.jpg" alt="trial2" width="250" height="50"></a></td>
+            <td>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html"> Home </a></li>
+                        <li><a href="#aboutUs">About us </a></li>
+                        <li><a href="page1.html"> Products </a></li>
+                        <li><a href="contactUs.php"> Contact us </a></li>
+                    </ul>
+                </nav>
+            </td>
+            <td width="50"><img src="imgs/bag.png" class="icons" alt="trial2"align ="right"onmouseover="this.src='imgs/shopping-cart.png';" onmouseout="this.src='imgs/bag.png'" onclick="window.open('shoppingCart.html','Furnico')">
+                <!--<img src="imgs/home.png" alt="trial2"align ="right">-->
+            </td>
+            <td width="40"><img src="imgs/heart.png" class="icons" alt="trial2"align ="right"onmouseover="this.src='imgs/like.png';" onmouseout="this.src='imgs/heart.png'"></td>
+            <td width="40">
+                <div class="dropdown">
+                    <img src="imgs/login.png" style="padding-right: 35px" class="icons" alt="trial2" align="right" onmouseover="this.src='imgs/login2.png';" onmouseout="this.src='imgs/login.png'" onclick="toggleDropdown()">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Login.html">Login</a>
+                        <a href="Logout.php">Logout</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</header>
+<!--*-->
+<section class="slidesOfImages">
+    <div class="slides">
+        <!--        <img src="imgs/slide1.jpg" alt="image1"  width="100%" height="645">-->
+        <div class="slide">
+            <img src="imgs/slide1.jpg" alt="Image 1" width="100%" height="645">
+            <div class="text">
+                <h1 class="welcome"> <span class="H">HOME FURNITURE</span> </h1><p> WHERE STYLE AND COMFORT MEET... </p>
+                <form>
+                    <button class ="button"name="SHOP NOW"> <b> SHOP NOW </b></button>
+                    <button class ="button" name="EXPLORE"> <b> EXPLORE </b></button>
+                </form>
+                </h1>
+            </div>
+        </div>
+        <!--        <img src="imgs/slide2.jpg" alt="image2"  width="100%" height="645">-->
+        <div class="slide">
+            <img src="imgs/slide2.jpg" alt="image2"  width="100%" height="645">
+            <div class="text2"><h1 class="welcome"> <span class="H"> KITCHEN FURNITURE SETS</span> </h1>Transform your kitchen into a culinary
+                haven with our exclusive summer sale at FurniCo.
+                For a limited time, enjoy <span class="DISCOUNT">20%</span> off all kitchen furniture sets,
+                whether you prefer modern, classic, or rustic styles.</div>
+        </div>
+        <!--        <img src="imgs/slide3.jpg" alt="image3"  width="100%" height="645">-->
+        <div class="slide">
+            <img src="imgs/slide3.jpg" alt="image3"  width="100%" height="645">
+            <div class="text2"><h1 class="welcome"> <span class="H">Exclusive Office Furniture Offer from FurniCo</span> </h1>
+                Upgrade your workspace with our special office furniture offer at FurniCo!
+                Enjoy up to <span class="DISCOUNT">30%</span> off on ergonomic chairs, modern desks,
+                storage solutions, and conference room furniture. </div>
+        </div>
+        <!--        <img src="imgs/slide4.jpg" alt="image4"  width="100%" height="645">-->
+        <div class="slide">
+            <img src="imgs/slide4.jpg" alt="image4"  width="100%" height="645">
+            <div class="text2"><h1 class="welcome"> <span class="H">Living Room Furniture Offer from FurniCo</span> </h1>
+                Elevate your living space with our special offer at FurniCo! Get up to <span class="DISCOUNT">30%</span>
+                off on stylish sofas, elegant coffee tables, and cozy lounge chairs.</div>
+        </div>
+    </div>
+    <!--    <button class="prev" onclick="prevSlide()">&#10094</button>-->
+    <!--    <button class="next" onclick="nextSlide()">&#10095</button>-->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</section>
+<script src="jsHome.js"></script>
+<!--*-->
+<section>
+    <hr><br>
+    <h2 class="sale"> TOP SELLER  <span class="sellInfo"> Crafted with excellent materials...</span> </h2>
+    <table>
+        <td>
+            <button class="products">
+                <img src="imgs/bed.jpg" width="250" height="250" onmouseover="this.src = 'imgs/openBed.jpg';" onmouseout="this.src = 'imgs/bed.jpg';">
+                <div class="information"> WHITE CREAM OTTOMAN BED <br> 4000₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW" onclick="window.location.href='checkOut.html'"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE" onclick="window.location.href='page1.html#Beds'"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/chair1.jpg" width="250" height="250" onmouseover="this.src = 'imgs/chair2.jpg';" onmouseout="this.src = 'imgs/chair1.jpg';">
+                <div class="information"> WILLOW GARDEN BENCH <br> 100₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/4.png" width="250" height="250" onmouseover="this.src = 'imgs/44.png';" onmouseout="this.src = 'imgs/4.png';">
+                <div class="information"> MULTI STORAGE CABINET <br> 350₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/5.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/55.jpg';" onmouseout="this.src='imgs/5.jpg'">
+                <div class="information"> ARMCHAIR WITH GOLD LEGS <br> 220₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/cupboard1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/cupboard2.jpg';" onmouseout="this.src='imgs/cupboard1.jpg'">
+                <div class="information"> ACADIA PINE CUPBOARD <br> 400₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+    </table>
+    <br><br><br><br>
+
+    <!--*-->
+    <h2 class="sale"> LAST ARRIVAL</h2>
+    <table>
+        <td>
+            <button class="products">
+                <img src="imgs/1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/2.jpg';" onmouseout="this.src='imgs/1.jpg'">
+                <div class="information"> MORELLA DOUBLE SOFA BED <br> 299.9₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/sofa1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/sofa2.jpg';" onmouseout="this.src='imgs/sofa1.jpg'">
+                <div class="information"> TEDDY FUR ARMCHAIR CREAM <br> 150₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/table1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/table2.jpg';" onmouseout="this.src='imgs/table1.jpg'">
+                <div class="information"> AMOS KIDS ACTIVITY TABLE <br> 100₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/disk1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/disk2.jpg';" onmouseout="this.src='imgs/disk1.jpg'">
+                <div class="information"> APOLLO COMPUTER DESK  <br> 220₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+        <td width="50"></td>
+        <td>
+            <button class="products">
+                <img src="imgs/bath1.jpg" alt="bb" width="250" height="250" onmouseover="this.src='imgs/bath2.jpg';" onmouseout="this.src='imgs/bath1.jpg'">
+                <div class="information"> GRAY WALL CABINET <br> 70₪ <br>
+                    <form>
+                        <table width="100%">
+                            <td><button class="button2" name="BUY NOW"> <b> BUY NOW </b></button></td>
+                            <td><button class="button2" name="EXPLORE"> <b> EXPLORE </b></button></td>
+                        </table>
+                    </form>
+                </div>
+            </button>
+            <br>
+        </td>
+    </table>
+    <br><br><br><br>
+    <div class="group2">
+        <table width="100%">
+            <td class="para" valign="center" width="55%"> <p id="fourS"> &nbsp;&nbsp;<B>FurniCo</B> exemplifies how a company can successfully combine sustainability with style and quality. By prioritizing environmental responsibility and customer satisfaction, <B>FurniCo</B> not only meets the demands<br> of modern consumers but also contributes positively to the planet.</p></td>
+            <td>
+                <video src="imgs/v3.mp4"
+                       width="100%"
+                       style="border-radius: 10px;"
+                       autoplay="autoplay"
+                       muted
+                       playsinline
+                       loop>
+                </video>
+            </td>
+        </table>
+    </div>
+    <br><br><br><br>
+    <!--*-->
+    <h2 class="sale"> FOUR STEPS TO ORDER FURNITURE FROM OUR COMPANY </h2>
+    <div class="group">
+        <table width="100%">
+            <td align="center" valign="top">
+                <img src="imgs/home.png" alt="cc">
+                <div><p> <span class="boldLine" id="aboutUs"><b>Tell Us About Your Move</b> </span> <br> Tell us where you're moving to and how long you'll be there.
+                    The longer your lease length, the lower your monthly cost. <br></p>
+                </div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/sofa.png" alt="cc">
+                <div><p> <span class="boldLine"><b> Furniture And So Much More</b></span> <br> Select a Move-In Ready™ package and let us design a whole
+                    home package for you. Or choose your own items for a personalized look.<br></p>
+                </div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/calendar.png" alt="cc">
+                <div> <p><span class="boldLine"><b> Schedule Delivery</b> </span><br> Select the delivery date that fits your schedule,
+                    and we'll handle everything from delivery to set up. <br></p>
+                </div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/tracking.png" alt="cc">
+                <div> <p><span class="boldLine"><b> Return</b></span><br> When you're ready, schedule your return. We'll come
+                    pick up everything and take it away.<br></p>
+                </div>
+            </td>
+        </table>
+    </div>
+    <br><br><br><br>
+
+    <!--*-->
+    <h2> ABOUT US </h2>
+    <div class="group2">
+        <table width="100%">
+            <td valign="top"> <p>At <B>FurniCo</B> Company, our focus is simple. We offer high quality furnishings at affordable prices. Our team of
+                trained buyers source the finest products from all over the world, ensuring we deliver the best quality furniture with modest pricing.
+                With something for every home, we offer a huge range of furniture and homeware products. Each item is carefully selected,
+                keeping our reputation for providing the best products at the best prices in mind. As one of the UK’s leading furniture websites,
+                our customers will always come first. We may also be able to offer discounts for large and multiple orders.
+                We believe that every home deserves the highest quality of furniture. Our options include furnishings for bedrooms,
+                offices, gardens, hallways, kitchens, dining and living areas plus storage facilities. We pride ourselves on delivering the
+                best customer service and we are so confident in our furnishings that we offer a 30 day cancellation policy.* <br><br>
+                <br><br>*Goods must be returned as new in the original packaging. For further information, please see our returns policy.</p></td>
+            <td>
+                <img src="imgs/furniCo.jpg" alt="cc" height="350">
+            </td>
+        </table>
+    </div>
+
+    <br><br><br><br>
+    <h2> THE FURNICO COMMITMENT</h2>
+    <div class="group">
+        <table width="100%">
+            <td align="center" valign="top">
+                <img src="imgs/visionary.png" alt="cc">
+                <div> <p><span class="boldLine"><b>Vision</b> </span> <br> At FurniCo, we believe everything is possible through service.<br></p></div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/goal.png" alt="cc">
+                <div> <p><span class="boldLine"><b> Mission </b></span> <br>Our Mission is to be an indispensable resource to our customers
+                    by listening, learning and providing exceptional value, every time.<br></p>
+                </div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/promise.png" alt="cc">
+                <div> <p><span class="boldLine"><b> Promise </b> </span><br> We promise to provide personalized service and to
+                    make your FurniCo experience extraordinary. <br></p>
+                </div>
+            </td>
+            <td width="50"></td>
+            <td align="center" valign="top">
+                <img src="imgs/satisfaction.png" alt="cc">
+                <div> <p><span class="boldLine"><b>Satisfaction</b></span><br> If you ever have a concern, we will make every effort to
+                    resolve it to your satisfaction, as your satisfaction is our greatest measure of success.<br></p>
+                </div>
+            </td>
+        </table>
+    </div>
+
+    <br><br><br><br>
+    <div class="group">
+        <table width="100%" valign="top">
+            <tr>
+                <td valign="top">
+                    <h2 class="h2"><u>Customer Service</u></h2>
+                    <table width="90%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>Call us toll-free <br>
+                                    <img class="icons" src="imgs/whatsapp.png" alt="cc">
+                                    <span class="number"> 0599595555</span>
+                                <hr>
+                                </p>
+                                <p> Call us worldwide <br>
+                                    <img class="icons" src="imgs/whatsapp.png" alt="cc">
+                                    <span class="number"> 0599502202</span>
+                                <hr>
+                                </p>
+                                <p> Call us worldwide <br>
+                                    <img class="icons" src="imgs/send.png" alt="cc">
+                                    <a href="mailto:furniCo@gmail.com" class="number"> furniCo@gmail.com</a>
+                                </p>
+                            </td>
+                            <td class="line">
+                                <p>Customer Service Hours:<br>
+                                <p> &nbsp;&nbsp;Monday-Friday (8am-8pm CT) <br> &nbsp;&nbsp;Saturday (9am-5:30pm CT)</p>
+                                <hr>
+                                &nbsp;&nbsp;<a href="https://www.instagram.com/"><img src="imgs/instagram.png"></a>
+                                &nbsp;&nbsp;<a href="https://x.com/?lang=ar"><img src="imgs/twitter.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.facebook.com/"><img src="imgs/facebook.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.linkedin.com/"><img src="imgs/linkedin.png"></a>
+                                &nbsp;&nbsp;<a href="https://web.telegram.org/k/"><img src="imgs/telegram.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.youtube.com/"><img src="imgs/youtube.png"></a>
+                                &nbsp;&nbsp;<a href="https://www.pinterest.com/"><img src="imgs/social.png"></a>
+                                <p>&nbsp;&nbsp;<a href="#fourS">Help Section</a><br>
+                                    &nbsp;&nbsp;<a href="#aboutUs">Refer FurniCo</a><br>
+                                    &nbsp;&nbsp;Communication Preferences<br></p>
+                                </p>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top">
+                    <h2 class="h2"><u>Our Company</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p><a href="#aboutUs">About FurniCo </a><br>
+                                    FurniCo Commitment<br>
+                                    Our Services<br>
+                                    Sustainability<br>
+                                    Careers at FurniCo<br>
+                                    Current Openings - Apply Here<br>
+                                    FurniCo in the Community<br>
+                                    Location Directory<br>
+                                    FurniCo Clean Certified<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td valign="top">
+                    <h2 class="h2"><u>Our Services</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>Rent Home Furniture<br>
+                                    Rent Furniture for Students<br>
+                                    Rent Furniture for Military<br>
+                                    Rent Office Furniture<br>
+                                    Rent Event Furniture<br>
+                                    Buy Furniture<br>
+                                    Disaster Relief<br>
+                                    Relocation Assistance<br>
+                                    Search for Apartments<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td valign="top">
+                    <h2 class="h2"><u>Our Sites</u></h2>
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="40%">
+                                <p>FurniCo Furniture Rental<br>
+                                    FurniCo Furniture Outlet<br>
+                                    FurniCo Events<br>
+                                    FurniCo Party Rental (WA)<br>
+                                    FurniCo Destination Services<br>
+                                    FurniCo Global Network<br>
+                                    Roomservice by FurniCo<br>
+                                    ApartmentSearch by FurniCo<br>
+                                    4SITE by FurniCo<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
